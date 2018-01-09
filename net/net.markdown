@@ -1,15 +1,15 @@
 # 网络编程 #
 
-** 学习内容 **
-- 计算机网络基本概念介绍;
-- URL理解和JAVA URL对象使用; 
+**学习内容**
+- 计算机网络基本概念介绍; 
+- URL理解和JAVA URL对象使用;  
 - TCP/IP网络协议通信模型和`socket`编程; 
 - UDP网络协议模型和`datagram`编程; 
 
-** 实践目标: **
-- 爬虫; 
+**实践目标:**
+- 爬虫;  
 - http服务器; 
-- QQ聊天工具; 
+- QQ聊天工具;  
 - 局域网通信(如飞鸽)聊天工具; 
 
 ## 网络基础知识 ##
@@ -62,16 +62,18 @@
 3. JAVA中 [URL对象](https://docs.oracle.com/javase/tutorial/networking/urls/urlInfo.html)用法
 
 	1step. 创建URL对象`url = URL(_url_)`; 
+
 	2step. 通过URL对象`url`获取资源定位符中包含的信息;
 
 	|接口名称|接口描述|
-	|!-------|!------|
+	|:-------|:------|
 	|getProtocol|使用的协议｜
 	|getHost|主机名|
 	|getPort|端口号|
 	|getPath|资源位置|
 	|getRef|文件中参考点|
 	|getQuery|查询字符串|
+
 
 	练习例子:
 
