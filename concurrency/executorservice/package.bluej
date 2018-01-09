@@ -1,0 +1,18 @@
+#BlueJ package file
+objectbench.height=100
+objectbench.width=1115
+package.editor.height=673
+package.editor.width=1294
+package.editor.x=-2
+package.editor.y=34
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+project.charset=UTF-8
+target1.height=62
+target1.name=ExecutorsExamp
+target1.type=PackageTarget
+target1.width=140
+target1.x=70
+target1.y=10
