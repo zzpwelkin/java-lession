@@ -1,19 +1,19 @@
-#网络编程#
-1. 计算机网络的概念和历史([百度百科][]和[wikipedia][https://en.m.wikepedia.org/wiki/Computer_network]);
+# 网络编程 #
+1. 计算机网络的概念和历史([百度百科][]和[wikipedia](https://en.m.wikepedia.org/wiki/Computer_network));
 2. 计算机网络现在的发转状况和应用;
 3. 现在通用的计算机五层网络模型介绍:
 ![网络层结构1][Layer_model_simple]
 ![网络层结构2][Layer_model_wiki]
 
-Layer_model_simple: 网络层结构.jpg "简单的网络层结构"
-Layer_model_wiki: network_layer_model.jpg "Network file layer model"
+[Layer_model_simple]: 网络层结构.jpg "简单的网络层结构"
+[Layer_model_wiki]: network_layer_model.jpg "Network file layer model"
 
 **实践目标:**
 - 爬虫模型实现(可以应用到前面刚学习的多线程和文件I/O课程.)
 - http服务器模拟.
 - QQ聊天Demo实现
 
-##URL(Unifieds Resource Location)##
+## URL(Unifieds Resource Location) ##
 1. 概念
 	URL是统一资源定位器的首字母缩写，是Internet上资源的参考(地址)。 
 
@@ -25,7 +25,7 @@ Layer_model_wiki: network_layer_model.jpg "Network file layer model"
 	协议如：file,http,ftp,
 	资源位置包括: 主机名(:接口)/资源位置/（#文件中的参考点） 
 
-3. JAVA中 [URL对象][https://docs.oracle.com/javase/tutorial/networking/urls/urlInfo.html] 用法
+3. JAVA中 [URL对象](https://docs.oracle.com/javase/tutorial/networking/urls/urlInfo.html)用法
 
 	```
 	两种构造方法创建URL对象;
@@ -41,7 +41,8 @@ Layer_model_wiki: network_layer_model.jpg "Network file layer model"
 
 4. 创建连接并读/写数据
 
-	1step. 创建URL对象`url = URL(_url_)`
+	1step. 创建URL对象`url = URL(_url_)` 
+
 		```
 		try {
 			URL url = new URL(...);
@@ -51,18 +52,21 @@ Layer_model_wiki: network_layer_model.jpg "Network file layer model"
 		}
 		```
 
-	2step. 获得`URLConnect`.
+	2step. 获得`URLConnect`. 
+
 		```
 		URLConnection con = url.openConnection();
 		```
 
-	3step. 设置`URLConnect`对象属性(**可选**)
+	3step. 设置`URLConnect`对象属性(**可选**) 
+
 		```
 		// set connect can post data to service
 		con.setDoOutput(true); 
 		```
 
-	4step. 读(or写)数据
+	4step. 读(or写)数据 
+
 		```
 		BufferedReader br = new BufferedReader(new InputStreamReader(
 								con.getInputStream()));
@@ -80,8 +84,8 @@ Layer_model_wiki: network_layer_model.jpg "Network file layer model"
 	* 商品详细信息的爬取;
 
 
-###Socket编程###
-###IP表示###
+### Socket编程 ###
+### IP表示 ###
 1. 概念和用途
 2. 由URL对象引出InetIpAddress对象;
 3. 实践用法
